@@ -1,2 +1,3 @@
-﻿using solutions.Easy;
-_0020ValidParentheses.Test();
+﻿using Leetcode.Easy;
+using solutions.Easy;
+_0026RemoveDuplicatesFromSortedArray.Test();
