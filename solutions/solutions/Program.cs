@@ -1,3 +1,3 @@
 ﻿using Leetcode.Easy;
 using solutions.Easy;
-_0026RemoveDuplicatesFromSortedArray.Test();
+_0027RemoveElement.Test();
