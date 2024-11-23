@@ -1,3 +1,3 @@
 ﻿using Leetcode.Easy;
 using solutions.Easy;
-_0027RemoveElement.Test();
+_0014LongestCommonPrefix.Test();
