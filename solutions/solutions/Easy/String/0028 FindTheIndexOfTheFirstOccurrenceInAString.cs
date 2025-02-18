@@ -11,6 +11,18 @@ namespace Leetcode.Easy.String
 
             return index;
         }
+        //Cách 2 (hay hơn)
+        public int StrStr_2(string haystack, string needle)
+        {
+            for (int i = 0; i <= haystack.Length - needle.Length; ++i)
+            {
+                if (haystack.Substring(i, needle.Length) == needle)
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
     }
 
     public static class _0028_FindTheIndexOfTheFirstOccurrenceInAString
