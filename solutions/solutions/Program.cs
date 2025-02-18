@@ -1,3 +1,3 @@
-﻿using Leetcode.Easy;
+﻿using Leetcode.Easy.String;
 using solutions.Easy;
-_0014LongestCommonPrefix.Test();
+_0028_FindTheIndexOfTheFirstOccurrenceInAString.Test();
