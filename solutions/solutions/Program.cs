@@ -1,3 +1,3 @@
 ﻿using Leetcode.Easy.String;
 using solutions.Easy;
-_0028_FindTheIndexOfTheFirstOccurrenceInAString.Test();
+_0125_Valid_Palindrome.Test();
