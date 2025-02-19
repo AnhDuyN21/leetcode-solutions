@@ -1,3 +1,5 @@
 ﻿using Leetcode.Easy.String;
+using Leetcode.Interview.NashTech;
 using solutions.Easy;
-_0125_Valid_Palindrome.Test();
+
+Problem2.Test();
