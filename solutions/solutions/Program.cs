@@ -2,4 +2,4 @@
 using Leetcode.Interview.NashTech;
 using solutions.Easy;
 
-Problem3.Test();
+_0168_ExcelSheetColumTitle.Test();
