@@ -2,4 +2,4 @@
 using Leetcode.Interview.NashTech;
 using solutions.Easy;
 
-Problem2.Test();
+Problem3.Test();
