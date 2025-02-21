@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Leetcode.Interview.NashTech
 {
@@ -24,7 +25,7 @@ namespace Leetcode.Interview.NashTech
 
         //In ra ma trận sau khi xoay 90 độ theo chiều kim đồng hồ.
         #endregion
-        public void RotateMatrix(int N, int[,] matrix)
+        public void RotateMatrix(int N,int M, int[,] matrix)
         {
             for (int x = 0; x < N / 2; x++)
             {
@@ -35,16 +36,19 @@ namespace Leetcode.Interview.NashTech
                     matrix[x, y] = matrix[N - 1 - y, x];
                     matrix[N - 1 - y, x] = matrix[N - 1 - x, N - 1 - y];
                     matrix[N - 1 - x, N - 1 - y] = matrix[y, N - 1 - x];
+
                     matrix[y, N - 1 - x] = temp;
                 }
             }
         }
 
-        public void PrintMatrix(int N, int[,] matrix)
+        public void PrintMatrix(int[,] matrix)
         {
-            for (int i = 0; i < N; i++)
+            int rows = matrix.GetLength(0);
+            int cols = matrix.GetLength(1);
+            for (int i = 0; i < rows; i++)
             {
-                for (int j = 0; j < N; j++)
+                for (int j = 0; j < cols; j++)
                 {
                     Console.Write(matrix[i, j] + " ");
                 }
@@ -60,25 +64,25 @@ namespace Leetcode.Interview.NashTech
             Solution_NashTech_Problem_3 solution = new Solution_NashTech_Problem_3();
             Console.OutputEncoding = System.Text.Encoding.UTF8;
 
-            Console.WriteLine("Nhập kích thước N của ma trận: ");
-            int N = int.Parse(Console.ReadLine());
+            int[,] matrix = {
+            {1, 2, 3},
+            {4, 5, 6}
+        };
 
-            int[,] matrix = new int[N, N];
+            int rows = matrix.GetLength(0);
+            int cols = matrix.GetLength(1);
 
-            Console.WriteLine("Nhập ma trận:");
-            for (int i = 0; i < N; i++)
+            int[,] rotatedMatrix = new int[cols, rows];
+
+            for (int i = 0; i < rows; i++)
             {
-                string[] row = Console.ReadLine().Split(' ');
-                for (int j = 0; j < N; j++)
+                for (int j = 0; j < cols; j++)
                 {
-                    matrix[i, j] = int.Parse(row[j]);
+                    rotatedMatrix[j, rows - 1 - i] = matrix[i, j];
                 }
             }
 
-            solution.RotateMatrix(N, matrix);
-
-            Console.WriteLine("Ma trận sau khi xoay 90 độ theo chiều kim đồng hồ:");
-            solution.PrintMatrix(N, matrix);
+            solution.PrintMatrix(rotatedMatrix);
 
         }
     }

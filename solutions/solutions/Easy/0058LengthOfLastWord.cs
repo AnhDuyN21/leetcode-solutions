@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Leetcode.Easy.String
+namespace Leetcode.Easy
 {
     public class Solution58
     {

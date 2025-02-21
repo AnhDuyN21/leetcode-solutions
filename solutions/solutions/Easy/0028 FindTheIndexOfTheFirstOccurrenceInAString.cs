@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace Leetcode.Easy.String
+namespace Leetcode.Easy
 {
     public class Solution28
     {
@@ -49,7 +49,7 @@ namespace Leetcode.Easy.String
     }
     //Đề: cho 2 chuỗi string "haystack" và "needle" trả về vị trí xuất 
     //    hiện đầu tiên của needle trong haystack nếu không có giá trị sẽ là -1
- //Ví dụ: Input: haystack = "sadbutsad", needle = "sad"
+    //Ví dụ: Input: haystack = "sadbutsad", needle = "sad"
     //    Output: 0
     //    Explanation: "sad" occurs at index 0 and 6.
     //    The first occurrence is at index 0, so we return 0.

@@ -1,5 +1,5 @@
-﻿using Leetcode.Easy.String;
-using Leetcode.Interview.NashTech;
+﻿using Leetcode.Interview.NashTech;
+using Leetcode.Medium;
 using solutions.Easy;
 
-_0151ReverseWordsInAString.Test();
+_0006_ZigzagConversion.Test();

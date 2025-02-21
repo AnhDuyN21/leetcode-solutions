@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Leetcode.Easy.String
+namespace Leetcode.Easy
 {
     public class Solution125
     {
@@ -42,12 +42,12 @@ namespace Leetcode.Easy.String
 
             foreach (char c in s.ToCharArray())
             {
-                if (Char.IsLetter(c) || Char.IsDigit(c))
+                if (char.IsLetter(c) || char.IsDigit(c))
                 {
                     charList.Add(c);
                 }
             }
-            
+
             string str = new string(charList.ToArray()).ToLower();
 
             string revStr = new string(charList.AsEnumerable().Reverse().ToArray()).ToLower();

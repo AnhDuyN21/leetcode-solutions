@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Leetcode.Easy.String
+namespace Leetcode.Easy
 {
     public class Solution_0151
     {
         public string ReverseWords(string s)
         {
             string result = string.Empty;
-            string [] array = s.Split(new char[] {' ', ';', ','}, StringSplitOptions.RemoveEmptyEntries);
+            string[] array = s.Split(new char[] { ' ', ';', ',' }, StringSplitOptions.RemoveEmptyEntries);
             Array.Reverse(array);
             //int start = 0;
             //int end = array.Length - 1;
@@ -23,7 +23,7 @@ namespace Leetcode.Easy.String
             //    start++;
             //    end--;
             //}
-           result = string.Join(" ", array);
+            result = string.Join(" ", array);
 
 
             return result;

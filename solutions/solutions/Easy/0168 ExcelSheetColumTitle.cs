@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Leetcode.Easy.String
+namespace Leetcode.Easy
 {
-    public class Solution_0168 
+    public class Solution_0168
     {
         public string ConvertToTitle(int columnNumber)
         {
             string result = string.Empty;
-            while(columnNumber > 0)
+            while (columnNumber > 0)
             {
                 columnNumber--;
                 int remainder = columnNumber % 26;
