@@ -3,4 +3,4 @@ using Leetcode.Interview.NashTech;
 using Leetcode.Medium;
 using solutions.Easy;
 
-_0205_IsomorphicStrings.Test();
+_0242_ValidAnagram.Test();
