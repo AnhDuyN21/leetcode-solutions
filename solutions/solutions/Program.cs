@@ -3,4 +3,4 @@ using Leetcode.Interview.NashTech;
 using Leetcode.Medium;
 using solutions.Easy;
 
-_0290_WordPattern.Test();
+_0344_ReverseString.Test();
