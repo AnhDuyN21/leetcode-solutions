@@ -13,13 +13,15 @@ namespace Leetcode.Easy
             char[] word = s.ToCharArray();
             int start = 0;
             int end = s.Length - 1;
+            HashSet<char> vowels = new HashSet<char> { 'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U' };
+
             while (start < end)
             {
-                while (start < end && !s.Contains(word[start].ToString()))
+                while (start < end && !vowels.Contains(word[start]))
                 {
                     start++;
                 }
-                while (start < end && !s.Contains(word[end].ToString()))
+                while (start < end && !vowels.Contains(word[end]))
                 {
                     end--;
                 }
