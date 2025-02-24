@@ -3,4 +3,4 @@ using Leetcode.Interview.NashTech;
 using Leetcode.Medium;
 using solutions.Easy;
 
-_0383_RansomNote.Test();
+_0387_FirstUniqueCharacterInAString.Test();
