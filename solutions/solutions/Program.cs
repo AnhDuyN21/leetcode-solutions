@@ -3,4 +3,4 @@ using Leetcode.Interview.NashTech;
 using Leetcode.Medium;
 using solutions.Easy;
 
-_0387_FirstUniqueCharacterInAString.Test();
+_0389_FindTheDifference.Test();
