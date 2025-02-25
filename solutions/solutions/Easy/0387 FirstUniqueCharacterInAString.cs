@@ -23,7 +23,6 @@ namespace Leetcode.Easy
                     dic.Add(words[i], 1);
                 }
             }
-
             for(int i = 0; i < words.Length; i++)
             {
                 if (dic[words[i]] == 1)
@@ -31,9 +30,23 @@ namespace Leetcode.Easy
                     return i;
                 }
             }
-
-
             return -1;
+
+            //Cách 2 ( tối ưu hơn )
+
+            //int[] charCounts = new int[256]; // Tối ưu cho ASCII
+            //foreach (char c in s)
+            //{
+            //    charCounts[c]++;
+            //}
+            //for (int i = 0; i < s.Length; i++)
+            //{
+            //    if (charCounts[s[i]] == 1)
+            //    {
+            //        return i;
+            //    }
+            //}
+            //return -1;
         }
     }
     public class _0387_FirstUniqueCharacterInAString
