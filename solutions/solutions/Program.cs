@@ -3,4 +3,4 @@ using Leetcode.Interview.NashTech;
 using Leetcode.Medium;
 using solutions.Easy;
 
-_0389_FindTheDifference.Test();
+_0392_IsSubsequence.Test();
